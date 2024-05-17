@@ -4,5 +4,6 @@ Steps to setup:
 2. run `npm i`
 3. run `npm run dev migrate`
 4. run `npm run dev seed-db`
-5. run `npm run dev start`
-6. To test the app, run `npm run test`
+
+- Start the server by running `npm run dev start`
+- Test the app by running `npm run test`
