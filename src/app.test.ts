@@ -50,8 +50,8 @@ describe("Duties API", () => {
 
 describe("Duties queries", () => {
     test("getAllDuties", async () => {
-        const duties = await __test.getAllDuties()
-        expect(duties.length).toEqual(SeedDb.duties.length)
+        const duties = await __test.getDutiesByPage(1)
+        expect(duties.length).toEqual(Math.min(SeedDb.duties.length, __test.itemsPerPage))
     })
 
     test("createDuty", async () => {
